@@ -7,11 +7,19 @@
 .navbar{
 	float:left;
 	display:block;
-
+}
+#topBtn{
+	position:fixed;
+	bottom:20px;
+	right:30px;
+	display:none;
+	cursor:pointer;
+	z-index:99;
 }
 #menubar{
 	color:black;
 	margin:20px;
+	font-size:22px;
 }
 
 .lorem-ipsum{

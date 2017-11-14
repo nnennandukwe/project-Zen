@@ -3,13 +3,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
- <link rel="stylesheet" type="text/css" href="theme.css">
+ <link rel="stylesheet" type="text/css" href="projectzen.css">
  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
 
- <!--- Navigation Bar --->
+ <!--- Navigation Bar -->
  <nav class="navbar">
   <div class="row">
    <a href="#projectzen" id="menubar">Project:<em>Zen</em></a>
@@ -19,8 +20,9 @@
   </div>
  </nav>
 
- <!--- The sectioning of different parts of the one-page site! --->
-
+ <!-- The sectioning of different parts of the one-page site! -->
+<button onclick="topFunction()" id="topBtn" title="scroll to top" i class="icon-chevron-up btn-lg btn btn-default"></i></a>
+	</button>
  <section>
   <img style="width:100%" src="http://3i133rqau023qjc1k3txdvr1.wpengine.netdna-cdn.com/wp-content/uploads/2014/12/shutterstock_275140940.jpg">
   <br>
@@ -85,7 +87,12 @@
 			  <h1 class="text-center"><label for="Subcribe to newsletter">Subscribe to our newsletter</label></h1><br>
 			  <div class="container text-center">
     <input type="email" value="" class="btn btn-default btn-lg" placeholder="Enter email address" required>
-    <input type="submit" value="OK" class="btn btn-default">
+    <button type="submit"
+			value="OK"
+			id="ok"
+			class="btn btn-default"
+			onclick="alert('Thank you for subscribing!')">OK
+				  </button>
 			  </div>
 		  </div>
 	</form>
@@ -94,7 +101,7 @@
 	  <br>
 	  <br>
 </section>
-   <!--- FOOTER --->
+   <!-- FOOTER -->
    <footer>
     <nav>
      <div class="row">
@@ -132,6 +139,7 @@
 		   </div>
 		   </nav>
 		   </footer>
+       <script type="text/javascript" src="projectzen.js"></script>
 </body>
 
 </html>
